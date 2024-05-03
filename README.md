@@ -102,7 +102,7 @@ First, install [jekyll](https://jekyllrb.com/) and [node.js](https://nodejs.org/
 You can go in the [variable.styl](https://github.com/victorvoid/space-jekyll-template/blob/master/src/styl/_variables.styl) and modify the colors. 
 
 
-## License
+## License (inherited)
 The MIT License (MIT)
 
 Copyright (c) 2016 Victor Igor
