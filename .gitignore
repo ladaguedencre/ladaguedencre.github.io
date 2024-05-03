@@ -1,4 +1,11 @@
 _site
 .sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+
 node_modules
 _drafts
+yarn.lock
+package-lock.json
+Gemfile.lock
