@@ -2,10 +2,6 @@
 
 A simple and elegant Jekyll theme based on Spacemacs. The theme works well on mobile devices as well.
 
-See a live demo [here](https://victorvoid.github.io/space-jekyll-template/).
-
-![](https://github.com/victorvoid/space-jekyll-template/blob/master/screenshot.png?raw=true)
-
 # Site/User Settings
 
 customize your site in ``_config.yml``
@@ -49,32 +45,6 @@ categories:
 - Lorem ipsum
 twitter_text: 'How to speak with Lorem'
 ---
-```
-
-## How to insert new links on menu navigation ?
-
-![](https://github.com/victorvoid/space-jekyll-template/blob/master/src/img/menu.png)
-
-You should open `_config.yml` and change/add `links` section:
-
-```yaml
-links:
-  section_1: # you can use any name
-    - title: home # show on menu
-      url: / #link
-      key_trigger: 1 # link shortcut and show on the left of the title
-    - title: my posts
-      url: /posts
-      key_trigger: 2
-    - title: series
-      url: /series
-      key_trigger: 3
-    - title: tags
-      url: /tags
-      key_trigger: 4
-    - title: about me
-      url: /about
-      key_trigger: 5
 ```
 
 Frontend Technologies

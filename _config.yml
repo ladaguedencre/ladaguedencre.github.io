@@ -14,22 +14,20 @@
 #
 # Site settings
 title: ladaguedencre
-email: your-email@example.com
+email: valerarezz@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Engineering software and other stuff.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: ""
 
 # User settings
 username: ladaguedencre
 user_title: ladaguedencre
-email: lorem.lorem@ipsum.com
+email: valerarezz@gmail.com
 twitter_username: loremipsum
-github_username:  loremipsum
+github_username:  ladaguedencre
 discord_invite: cj5rg # Example: Discord server invite gg extension like in 'https://discord.gg/cj5rg'
-linkedin_public_url: loremipsum # Example: For public profile 'www.linkedin.com/in/john-smith', 'john-smith' is your linkedin_public_url
+linkedin_public_url: valerii-riznyk
 disqus_username: loremipsum
 profile_picture: https://avatars.githubusercontent.com/u/19950079?s=400&u=6ca13708f8e2cc0e258b6524ba2f4d63d2a2f1bc&v=4
 
@@ -54,17 +52,18 @@ links:
     - title: my posts
       url: /posts
       key_trigger: 2
-    - title: series
-      url: /series
-      key_trigger: 3
     - title: about
       url: /about
-      key_trigger: 5
+      key_trigger: 3
   section_2:
     - title: github
       url: http://www.github.com/ladaguedencre
       new_tab: true
       key_trigger: g
+    - title: linkedin
+      url: https://www.linkedin.com/in/valerii-riznyk/
+      new_tab: true
+      key_trigger: l
     - title: search
       url: ""
       key_trigger: s #WARNING: search only works with "s"
@@ -72,7 +71,7 @@ links:
 # projects in header index
 projects:
   - name: EKNM Hub
-    url: https://eknm.in
+    url: http://eknm.in
 
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
