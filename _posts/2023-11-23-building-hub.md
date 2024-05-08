@@ -8,8 +8,7 @@ description: ''
 A samurai has no goal, only path...
 
 ### Introduction
-If you want to have a productive discussion about system design, it's better to start from requirements. Most articles in this field focus on scalability, fault-tolerance and deployability, but it's far from covering all applications. Let's say you have a restaurant and you need a website with a menu, contacts and some tasty looking pictures. You don't expect heavy loads or huge amounts of data, you just need it to be cheap and reliable. Or let's take a different example - a service with some company's internal tools: you need it to be highly configurable and flexible.
-Our case is kind of a mix of the previous two. We needed a website, file storage, admin panel, and a lot of different things to help us with our ideas that constantly appear and disappear. In other words, a lot of functionality, but cheap, highly configurable, and hopefully workable. And it takes some time to figure out how to do it.
+If you want to have a productive discussion about system design, it's better to start from requirements. Most articles in this field focus on scalability, fault-tolerance and deployability, but it's far from covering all applications. What we needed was a website, a file storage, an admin panel, and a lot of different things to help us with our ideas that constantly appear and disappear. In other words, a lot of functionality, but cheap, highly configurable, and hopefully workable. And it takes some time to figure out how to do it the best way.
 
 ### AWS: Apparently Very Simple
 So, we decided to build our first functional prototype using an AWS serverless stack:
@@ -51,7 +50,7 @@ Take note, that at this point all base infrastructure is AWS compatible by desig
 
 ![img](https://eknm-hub-public.s3.eu-central-1.amazonaws.com/building_hub/building_hub_dark.jpg)
 
-The only part of this scheme not covered yet is a *Health Proxy* layer, which we implemented on a client side. When a user opens our website, the AWS hosted web page is loaded. This page instantly tries to ping the *true leader* and decides where to route the request depending on leader availability. Statelessness of this proxy allows us to make it extremely lightweight and always have client-specific availability data, approaching close to zero downtime. 
+On this scheme you can also see a *Health Proxy* layer, which we implemented on a client side. When a user opens our website, the AWS hosted web page is loaded. This page instantly tries to ping the *true leader* and decides where to route the request depending on leader availability. Statelessness of this proxy allowed us to make it extremely lightweight and always have client-specific availability data, approaching close to zero downtime. 
 
 ### Overengineering? Never heard of that
-To be written...
+It's easy to be tempted by a huge beautiful scheme where everithing interacts with everything and all situations are handled. It may even be fun to implement. What is not fun is supporting this kind of architecture. If you take the cost of labour in account, the emergency replication scheme depicted above just doesn't save any money if you need to change things frequently. Current state of the project is transition to some kind of micro-site architecture, where each independent part is a separate site, server or whatever it should be. Will it be the final chapter? Time will tell.

@@ -70,8 +70,8 @@ links:
 
 # projects in header index
 projects:
-  - name: EKNM Hub
-    url: http://eknm.in
+  - name: Šrink
+    url: https://srink.eknm.in
 
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
